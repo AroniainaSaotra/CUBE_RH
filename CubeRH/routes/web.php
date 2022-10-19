@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('ajouttache','AdminController@ajouttache');
+Route::get('ajouttache',['uses'=>'AdminController@ajouttache','as'=>'ajouttache']);
+
 Route::get('/', function () {
     return view('welcome');
 });
